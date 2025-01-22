@@ -1,0 +1,35 @@
+/*
+    id (#) can only be applied to one element
+    class (.) can be be applied to multiple elements
+*/
+
+body {
+    background-color: rgb(205, 255, 203);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 { color: rgb(4, 109, 0); }
+
+h1#principal {
+    background-color: rgb(4, 109, 0);
+    color: white;
+    text-align: center;
+}
+
+h2 { color: rgb(51, 77, 49); }
+
+.basic {
+    color: #3c805e;
+}
+
+.interm {
+    color: #80793c;
+}
+
+.adv {
+    color: #083c3c;
+}
+
+.highlight {
+    background-color: #c5c56070;
+}
