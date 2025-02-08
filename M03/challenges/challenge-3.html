@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge #3</title>
+    <style>
+        body { font-family: Arial, Helvetica, sans-serif; }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+        
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        thead > tr > th, tfoot > tr > th {
+            background-color: gray;
+            color: white;
+        }
+
+        tbody > tr > th {
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Challenge #3</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2" scope="col">Area</th>
+                <th rowspan="2" scope="col">Subjects</th>
+                <th colspan="2" scope="colgroup"> Ranks</th>
+                <th rowspan="2" scope="col">Rank Average</th>
+            </tr>
+            <tr>
+                <th scope="col">Rank 1</th>
+                <th scope="col">Rank 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4" scope="rowgroup">Exact</th>
+                <td>Math</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Physics</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Chemistry</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Biology</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+        </tbody>
+        <thead>
+            <tr>
+                <th colspan="4" scope="row">Exact Sciences AVG</th>
+                <th>0.0</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="2" scope="rowgroup">Humanities</th>
+                <td>History</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Geography</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row">Humanities subjects AVG</th>
+                <th>0.0</th>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
