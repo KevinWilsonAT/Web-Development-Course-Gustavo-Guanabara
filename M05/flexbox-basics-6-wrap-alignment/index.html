@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+</head>
+<style>
+
+    /*
+    align-content options (must be used with flex-wrap: wrap;)
+    
+    first baseline, baseline, last baseline;
+    start, end;
+    flex-start, flex-end;
+    center, normal;
+    space-around, space-between, space-evenly;
+    stretch;
+    safe, unsafe;
+    */
+
+    div.container {
+        background-color: lightsalmon;
+        display: flex;
+        height: 400px;
+        flex-flow: row wrap;
+        align-content: center;
+    }
+    
+    div.item {
+        background-color: lightskyblue;
+        border: 1px solid black;
+        text-align: center;
+        padding: 40px;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
