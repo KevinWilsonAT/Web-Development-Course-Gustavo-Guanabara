@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Form</title>
+
+    <style>
+        * { font-family: Arial, Helvetica, sans-serif; }
+    </style>
+
+</head>
+
+<body>
+    <h1>User Form</h1>
+    <form action="reg.php" method="GET" autocomplete="on">
+        <p>
+            <label for="iuser">Username:</label>
+            <input type="text" name="user" id="iuser" minlength="5" maxlength="30" size="10" placeholder="User name" autocomplete="username" required>
+        </p>
+        <p>
+            <label for="ipassword">Password:</label>
+            <input type="password" name="password" id="ipassword" minlength="8" maxlength="20" size="8" placeholder="Min. 8 characters" autocomplete="current-password" required>
+        </p>
+        <p>
+            <input type="submit" value="Send">
+            <input type="reset" value="Clear">
+        </p>
+    </form>
+</body>
+</html>

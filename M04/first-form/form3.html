@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Month Date Time Form</title>
+
+    <style>
+        * { font-family: Arial, Helvetica, sans-serif; }
+    </style>
+
+</head>
+
+<body>
+    <h1>Month Date Time Form</h1>
+    <form action="reg.php" method="GET" autocomplete="on">
+        <p>
+            <label for="iname">Name:</label>
+            <input type="text" name="name" id="iname" maxlength="30" placeholder="Complete name" autocomplete="name" required>
+        </p>
+        <p>
+            <label for="iavg">AVG:</label>
+            <input type="number" name="avg" id="iavg" min="0" max="10" placeholder="0 to 10" step="0.1" value="5" required>
+        </p>
+        <p>
+            <label for="imonth">Month:</label>
+            <input type="month" name="month" id="imonth" value="2025-01">
+        </p>
+        <p>
+            <label for="iday">Test Day:</label>
+            <input type="date" name="day" id="iday" value="2025-01-01">
+        </p>
+        <p>
+            <label for="ihour">Test Hour:</label>
+            <input type="time" name="hour" id="ihour">
+        </p>
+        <p>
+            <input type="submit" value="Send">
+            <input type="reset" value="Clear">
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox Radio Form</title>
+
+    <style>
+        * { font-family: Arial, Helvetica, sans-serif; }
+    </style>
+
+</head>
+
+<body>
+    <h1>Checkbox Radio Form</h1>
+    <form action="reg.php" method="GET" autocomplete="on">
+        <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" name="male" id="imale" value="M">
+            <label for="imale">Male</label>
+            <input type="radio" name="female" id="ifemale" value="F" checked>
+            <label for="ifemale">Female</label>
+        </fieldset>
+        <fieldset>
+            <legend>Gender</legend>
+            <input type="checkbox" name="basketball" id="ibasketball" checked>
+            <label for="ibasketball">Basketball</label>
+            <input type="checkbox" name="football" id="ifootball" checked>
+            <label for="ifootball">Football</label>
+            <input type="checkbox" name="swimming" id="iswimming">
+            <label for="iswimming">Swimming</label>
+            <input type="checkbox" name="tennis" id="itennis">
+            <label for="itennis">Tennis</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Send">
+            <input type="reset" value="Clear">
+        </p>
+    </form>
+</body>
+</html>
